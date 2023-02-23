@@ -42,8 +42,8 @@ case 'etatFrais':
 case 'deconnexion':
     include 'controleurs/c_deconnexion.php';
     break;
-case 'suivrePaiment':
-    include 'controleurs/c_suivrePaiment.php';
+case 'suivrePaiement':
+    include 'controleurs/c_suiviPaiement.php';
     break;   
 case 'valideFiche':
     include 'controleurs/c_valideFiche.php';

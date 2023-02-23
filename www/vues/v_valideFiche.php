@@ -119,13 +119,13 @@
                     <?php
                     foreach ($lesFraisHorsForfait as $unFraisHorsForfait) {
                         $libelle = htmlspecialchars($unFraisHorsForfait['libelle']);
-                        $date = $unFraisHorsForfait['date'];
+                        $date=$unFraisHorsForfait['date'];
                         $montant = $unFraisHorsForfait['montant'];
                         $id = $unFraisHorsForfait['id'];
                         ?>           
                         <tr>
-                            <td> <input type="text" id="date" name="date"size="16" value=" <?php echo $date ?>"></td>
-                            <td> <input type="text" id="libelle" name ="libelle" size="16" value=" <?php echo $libelle ?>"></td>
+                            <td> <input type="text" id="date" name="date"size="16" value="<?php echo $date ?>"></td>
+                            <td> <input type="text" id="libelle" name ="libelle" size="16" value="<?php echo $libelle ?>"></td>
                             <td> <input type="text" id="montant" name="montant" size="6" value="<?php echo $montant ?>"></td>
                 
                             <td> <input type="hidden" id="id" name="id" value="<?php echo $id ?>" >
@@ -145,7 +145,7 @@
 
             <div class="form-group">
                 <label>Nombre de justificatifs</label>             
-                <input type="text" size="4" maxlenght="5">
+                <input type="text" size="4" maxlenght="5" value="<?php echo   $nombreJustificatif ?>">
                 <br><input class="btn btn-success" id="validerFiche" name="validerFiche" type="submit" value="Valider" /><br>
             </div> 
         </div>

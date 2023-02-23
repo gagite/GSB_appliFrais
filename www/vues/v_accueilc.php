@@ -38,7 +38,7 @@
                            class="btn btn-success btn-lg" role="button">
                             <span class="glyphicon glyphicon-pencil"></span>
                             <br>Valider la fiche de frais</a>
-                        <a href="index.php?uc=suivrePaiment"
+                        <a href="index.php?uc=suivrePaiement&action=choixFiche"
                            class="btn btn-lg" style="background-color:#ec971f;  color:#fff"  role="button">
                             <span class="glyphicon glyphicon-list-alt"></span>
                             <br>Suivre le paiement des fiches de frais</a>

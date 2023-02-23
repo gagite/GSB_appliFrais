@@ -1,0 +1,28 @@
+
+Deprecated: array_key_exists(): Using array_key_exists() on objects is deprecated. Use isset() or property_exists() instead in phar://C:/Program Files/NetBeans-12.6/netbeans/php/phpunit/phpDocumentor.phar/vendor/twig/twig/lib/Twig/Template.php on line 527
+<?php
+/**
+ * Gestion de l'accueil
+ *
+ * PHP Version 7
+ *
+ * @category  PPE
+ * @package   GSB
+ * @author    Réseau CERTA <contact@reseaucerta.org>
+ * @author    José GIL <jgil@ac-nice.fr>
+ * @copyright 2017 Réseau CERTA
+ * @license   Réseau CERTA
+ * @version   GIT: <0>
+ * @link      http://www.reseaucerta.org Contexte « Laboratoire GSB »
+ */
+
+if ($estConnecte) {
+    if (isset($_SESSION['idComptable'])){
+     include 'vues/v_accueilc.php';
+    }else  {
+    include 'vues/v_accueilv.php';
+    }
+} else {
+    include 'vues/v_connexion.php';
+}
+
